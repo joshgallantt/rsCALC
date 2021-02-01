@@ -23,7 +23,6 @@
 </p>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -49,7 +48,6 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
