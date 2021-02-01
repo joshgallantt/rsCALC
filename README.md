@@ -19,8 +19,8 @@
 If you've tried to grab insights from RewardStyles' commission interface, you know that it's dated and unwieldy. rsCALC is designed to automate the process and enable you to make business decisions faster.
 
 Features:
-* Automatically logs in to your RewardStyle account and downloads your data from a specified date range
-* Provides some at-a-glance stats for the given period:
+* Automatically logs in to your RewardStyle account and downloads your data for a specified date range
+* Provides some useful out of the box stats such as:
   * Estimated Advertiser Earnings (using automatically updated brand rates)
   * Top Brands
   * Top Products
@@ -57,7 +57,7 @@ Features:
 1. Enter your RewardStyle login info
 2. Click Start and wait for the files to be downloaded/worked with
 3. After you see the output you can export the data for your range using the Export button
-4. If you wish you see another date range, just select those dates and start again.
+4. To see another date range, just select those dates and click Start again.
 
 Note: Anything not exported gets deleted on program exit.
 
