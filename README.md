@@ -48,9 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-RewardStyles interface to download your commission data is old and unweildy. I created this to allow me to automate the process.
+If you've tried to grab insights from RewardStyles commission interface to aid in business decions, you know that their interface is dated and unewildy. I created this to allow me to automate the process.
 
 Features:
 * Automatically logs in to your RewardStyle account and downloads your data from a specified date range
