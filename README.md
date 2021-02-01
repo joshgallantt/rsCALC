@@ -122,8 +122,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@joshgallantt](https://instagram.com/joshgallantt) - email@example.com
-
+Your Name - [@joshgallantt](https://instagram.com/joshgallantt)
 Project Link: [https://github.com/joshgallantt/rsCALC](https://github.com/joshgallantt/rsCALC)
 
 
