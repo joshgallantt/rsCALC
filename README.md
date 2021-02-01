@@ -53,9 +53,11 @@ If you've tried to grab insights from RewardStyles commission interface to aid i
 Features:
 * Automatically logs in to your RewardStyle account and downloads your data from a specified date range
 * Provides some at-a-glance stats for the given period:
-  * Finds estimated advertiser earnings using automatically updated brand rates
-  * Top Brands, Products, and Refunds for the given periods
-* Combines and formats all of the data into a .csv file for easy in-house use
+  * Estimated Advertiser Earnings (using automatically updated brand rates)
+  * Top Brands
+  * Top Products
+  * Top Refunds
+* Combines and formats all of the data into a .csv file for easy in-house uses
 
 ### Built With
 
