@@ -67,7 +67,7 @@ Note: Anything not exported gets deleted on program exit.
 <!-- CONTRIBUTIONS -->
 ## Contributing
 
-See the [open issues](https://github.com/joshgallantt/rsCALC/issues) for a list of proposed features (and known issues). I'm new to programming and if you have any experience with Python and any of the frameworks, please feel free to submit a pull request or DM me.
+See the [open issues](https://github.com/joshgallantt/rsCALC/issues) for a list of proposed features (and known issues). I'm new to programming and if you have any experience with Python or any of the included frameworks, please feel free to submit a pull request or DM me.
 
 <!-- LICENSE -->
 ## License
