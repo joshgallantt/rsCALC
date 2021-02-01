@@ -14,7 +14,7 @@
     <img src="assets/dress.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">rsCALC</h3>
 
   <p align="center">
     A commission data downloader and calculator for RewardStyle influencers
