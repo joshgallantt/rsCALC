@@ -97,3 +97,5 @@ Discussions [here](https://github.com/joshgallantt/rsCALC/discussions)
 
 Thank you James for answering way too many of my coding questions!
 
+Not affiliated with RewardStyle, please read the license for more info.
+
