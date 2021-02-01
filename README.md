@@ -108,5 +108,6 @@ Project Link: [https://github.com/joshgallantt/rsCALC](https://github.com/joshga
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Icon from Favicon](https://www.flaticon.com/free-icon/dress_1785255?term=dress&page=1&position=2&page=1&position=2&related_id=1785255&origin=search)
+
 and thank you James for answering way too many of my coding questions!
 
