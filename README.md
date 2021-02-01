@@ -35,6 +35,7 @@ Features:
   * Top Products
   * Top Refunds
 * Combines and formats all of the data into a .csv file for easy in-house uses
+* (Untested) Besides Windows, rsCALC should work on MacOS (with intel chips), and Linux
 
 ### Built With
 
