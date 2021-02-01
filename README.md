@@ -55,7 +55,7 @@ Features:
 3. Install the following python libraries:
 
   ```sh
-  pip install selenium pandas Pillow bs4 lxlm
+  pip install selenium pandas Pillow bs4 lxlm tkinter
   ```
 4. Extract the zip anywhere on your machine and run rsCALC.py
 
