@@ -62,10 +62,6 @@ Here's why:
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should element DRY principles to the rest of your life :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
 ### Built With
 
 * [Selenium](https://github.com/SeleniumHQ/Selenium)
@@ -92,19 +88,6 @@ To get a local copy up and running follow these simple example steps.
   pip install selenium pandas Pillow bs4 lxlm
   ```
 4. Extract the zip anywhere on your machine and run rsCALC.py
-  
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -112,7 +95,7 @@ To get a local copy up and running follow these simple example steps.
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 
-<!-- ROADMAP -->
+<!-- CONTRIBUTIONS -->
 ## Contributions
 
 See the [open issues](https://github.com/joshgallantt/rsCALC/issues) for a list of proposed features (and known issues). I'm new to programming and if you have any experience with Python and any of the frameworks, please feel free to submit a pull request or DM me.
