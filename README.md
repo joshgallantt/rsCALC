@@ -62,10 +62,10 @@ Features:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Step 1) Enter your RewardStyle login info
-Step 2) Click Start and wait for the files to be downloaded/worked with
-Step 3) After you see the output you can export the data for your range using the Export button
-Step 4) If you wish you see another date range, just select those dates and start again.
+* Step 1) Enter your RewardStyle login info
+* Step 2) Click Start and wait for the files to be downloaded/worked with
+* Step 3) After you see the output you can export the data for your range using the Export button
+* Step 4) If you wish you see another date range, just select those dates and start again.
 
 Note: Anything not exported gets deleted on program exit.
 
