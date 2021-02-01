@@ -10,6 +10,7 @@ import pandas as pd
 import shutil
 import platform
 import tkinter as tk
+from tabulate import tabulate
 from PIL import Image, ImageTk
 from tkinter.filedialog import askopenfile
 from tkinter import ttk
@@ -36,7 +37,6 @@ def wait(seconds):
     return time.sleep(seconds)
 
 def download_wait(directory = str(os.getcwd())):
-    # print('\nwaiting for downloads to complete...')
     seconds = 0
     dl_wait = True
     while dl_wait and seconds < 20:
@@ -49,14 +49,12 @@ def download_wait(directory = str(os.getcwd())):
     return seconds
 
 def login():
-    print('Logging in...')
     driver.get("https://auth.rewardstyle.com/login/")
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".mt-5 > .btn__content")))
     driver.find_element(By.NAME, "username").send_keys(username)
     driver.find_element(By.NAME, "password").send_keys(password)
     driver.find_element(By.CSS_SELECTOR, ".mt-5 > .btn__content").click()
     driver.get("https://www.rewardstyle.com/affiliate-rewards")
-    print('\nLog in succesful!')
 
 
 def read_from_calendar():
@@ -68,7 +66,6 @@ def read_from_calendar():
     from_calendar_year = (driver.find_element(By.CSS_SELECTOR, ".\\_month").text[6:10])
     from_calendar_month = (driver.find_element(By.CSS_SELECTOR, ".\\_month").text[2:5])
     day_css_offset = 8
-    print('Read cal 1')
 
 
 def read_to_calendar():
@@ -80,30 +77,25 @@ def read_to_calendar():
     to_calendar_year = (driver.find_element(By.CSS_SELECTOR, ".\\_month").text[6:10])
     to_calendar_month = (driver.find_element(By.CSS_SELECTOR, ".\\_month").text[2:5])
     day_css_offset = 8
-    print('Read cal 2')
 
 
 def open_from_calendar():
-    print('Opened cal 1')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".rewards-datepicker-input-start")))
     return driver.find_element(By.CSS_SELECTOR, ".rewards-datepicker-input-start").click()
 
 
 def open_to_calendar():
-    print('Opened cal 2')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".rewards-datepicker-input-end")))
     return driver.find_element(By.CSS_SELECTOR, ".rewards-datepicker-input-end").click()
 
 
 def click_day():
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".\\_day:nth-child(8)")))
-    print('Clicked day')
     return driver.find_element(By.CSS_SELECTOR, ".\\_day:nth-child("+str(day_css_offset)+")").click()
 
 
 def selected_day_on_widget():
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".\\_day:nth-child(8)")))
-    print('Selected day')
     return int(driver.find_element(By.CSS_SELECTOR, ".\\_day:nth-child("+str(day_css_offset)+")").text)
 
 
@@ -117,7 +109,6 @@ def user_end_date_month():
 
 def click_previous():
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".\\_previous")))
-    print('Clicked Previous')
     return driver.find_element(By.CSS_SELECTOR, ".\\_previous").click()
 
 
@@ -129,8 +120,6 @@ def click_export():
     wait(3)
     driver.find_element(By.ID, "export-button").click()
     download_wait()
-    print('Clicked Export')
-
 
 def find_last_day_of_month(to_calendar_month):
     calendar_dict = {
@@ -153,16 +142,12 @@ def delete_all_csv_in_cwd():
 
 
 def convert_xls_to_html_in_cwd():
-    print('\nconverting xls in directory to html')
-    print(os.getcwd())
     for file in os.listdir(os.getcwd()):
         os.path.splitext(file)
         os.rename(file, file.replace('.xls', '.html'))
 
 
 def soup_to_csv(outputFilename, soupFunction):
-
-    print(f'\nconverting soup to {outputFilename}')
 
     soup_export_no_empty_lists = [lists for lists in soupFunction if lists != []]
 
@@ -200,9 +185,6 @@ def soup_to_csv(outputFilename, soupFunction):
 
 
 def get_soup(data_or_rates):
-
-    print(f'\ngetting soup for {data_or_rates}')
-    
 
     if data_or_rates == 'rates.csv':
         output_rows = []
@@ -249,8 +231,6 @@ def download_data():
     global to_calendar_month
     global progress
 
-    print('\ndownloading data...')
-
     # open and read the end calendar widget for the first time, every time we read them we set the div offest to 8
     open_to_calendar()
     read_to_calendar()
@@ -281,7 +261,6 @@ def download_data():
         wait(0.1)
 
         #while widgets month or year dont match our START date, we will have to download from the first.
-        print(f'Getting {from_calendar_month, from_calendar_year}')
         progress['value'] += 10
         progress.update()
 
@@ -339,7 +318,6 @@ def download_data():
 
 
 def download_rates():
-    print('\ndownloading brand rates...')
     driver.get("https://www.rewardstyle.com/ads/rates?s=0")
     WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".even-row:nth-child(2) > td:nth-child(1)")))
 
@@ -348,7 +326,7 @@ def download_rates():
         f.close()
 
 
-from tabulate import tabulate
+
 def generate_report(request):
 
     pd.set_option('precision', 2)
@@ -377,13 +355,13 @@ def generate_report(request):
     #Sum of your open earnings
     total_earnings_for_date_range = round(df['Our Earnings'].sum(),2)
     
-    b = '\nTotal open earnings of {:,.2f}.'.format(total_earnings_for_date_range)
+    b = '\nTotal open earnings of {:,.2f}'.format(total_earnings_for_date_range)
     if request == 'b':
         return b
 
     #Sum of all brands estimated earnings
     total_advertiser_earnings_for_date_range = round(df['Advertisers Earnings'].sum(),2)
-    c = '\nBrands earned an estimated {:,.2f}.'.format(total_advertiser_earnings_for_date_range)
+    c = '\nBrands earned an estimated {:,.2f}'.format(total_advertiser_earnings_for_date_range)
     if request == 'c':
         return c
 
@@ -465,13 +443,13 @@ def initdriver():
     cpu = platform.architecture()
 
     if myos == 'Windows':
-        osdependant = "win"
+        osdependant = "drivers/win"
 
     if myos == 'Linux':
-        osdependant = "linux"
+        osdependant = "drivers/linux"
 
     if myos == 'Darwin':
-        osdependant = "mac64"
+        osdependant = "drivers/mac64"
     
     driver = webdriver.Chrome(options=options, executable_path=osdependant)
 
@@ -493,14 +471,10 @@ def start():
     progress.place(x=38, y=410)
 
     username = userinput.get()
-    print(username)
     password = passinput.get()
-    print(password)
 
     users_start_date = fromDate.get_date()
-    print(users_start_date)
     users_end_date = toDate.get_date()
-    print(users_end_date)
     
     
     try:
@@ -534,14 +508,11 @@ def start():
     progress['value'] +=10
     delete_all_html_in_cwd()
 
-    #export buttin
     progress['value'] = 100
     progress.update()
-
-    root.geometry('1600x600')
-    root.update()
-    #text box
-    text_box = tk.Text(root, font=("Courier",8), height=40, width=140, padx= 10, pady = 10)
+    
+    root.geometry('1600x500')
+    text_box = tk.Text(root, font=("Courier",8), height=32, width=150, padx= 10, pady = 10)
 
     EventScrollBar= tk.Scrollbar(root, command=text_box.yview, orient="vertical")
 
@@ -561,6 +532,9 @@ def start():
     EventScrollBar.pack(side = RIGHT, fill = Y)  
     text_box.configure(yscrollcommand=EventScrollBar.set)
 
+    Button(root, text='Export', width = 9, font=('TkDefaultFont', 12, 'normal'), command=lambda:export()).place(x=210, y=450)
+
+
 
 
 # this is the function called when the button is clicked
@@ -572,7 +546,7 @@ def export():
     try:
         shutil.copyfile('user_ .csv',path_to_export)
     except:
-        print('no such file or directory')
+        pass
 
 
 if getattr(sys, 'frozen', False):
@@ -590,7 +564,7 @@ root = Tk()
 
 
 # This is the section of code which creates the main window
-root.geometry('520x460')
+root.geometry('520x500')
 root.title('rsCALC - Version 0.1')
 root.resizable(False, False)
 root.iconphoto(False, tk.PhotoImage(file='assets/dress.png'))
@@ -620,7 +594,6 @@ toDate= DateEntry(width=12, borderwidth=2)
 toDate.place(x=260, y=310)
 
 Button(root, text='Start', width = 9, font=('TkDefaultFont', 12, 'normal'), command=lambda:start()).place(x=210, y=355)
-Button(root, text='Export', width = 9, font=('TkDefaultFont', 12, 'normal'), command=lambda:export()).place(x=210, y=500)
 
 
 root.mainloop()
