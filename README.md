@@ -1,12 +1,3 @@
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -34,8 +25,8 @@ Features:
   * Top Brands
   * Top Products
   * Top Refunds
-* Combines and formats all of the data into a .csv file for easy in-house uses
-* (Untested) Besides Windows, rsCALC should work on MacOS (with intel chips), and Linux
+* Combines and formats all of the data into a .csv file for further use
+* (Untested) Besides Windows, rsCALC should work on pre M1 Macs, and Linux
 
 ### Built With
 
