@@ -17,7 +17,7 @@
   <h3 align="center">rsCALC</h3>
 
   <p align="center">
-    A commission data downloader and calculator for RewardStyle influencers
+    A data manager and calculator for RewardStyle influencers
     <br />
   </p>
 </p>
@@ -53,9 +53,11 @@
 RewardStyles interface to download your commission data is old and unweildy. I created this to allow me to automate the process.
 
 Features:
-* Automatically logs in to your RewardStyle account and downloads your data from a date range of your choosing.
-* Provides some at-a-glance stats for the given period: estimated earnings by brands, top products, and top refunds. * * test
-* Combines 
+* Automatically logs in to your RewardStyle account and downloads your data from a specified date range
+* Provides some at-a-glance stats for the given period:
+  * Finds estimated advertiser earnings using automatically updated brand rates
+  * Top Brands, Products, and Refunds for the given periods
+* Combines and formats all of the data into a .csv file for easy in-house use
 
 ### Built With
 
