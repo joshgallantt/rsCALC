@@ -54,8 +54,7 @@ RewardStyles interface to download your commission data is old and unweildy. I c
 
 Features:
 * Automatically logs in to your RewardStyle account and downloads your data from a date range of your choosing.
-* Provides some at-a-glance stats for the given period: estimated earnings by brands, top products, and top refunds.
-** test
+* Provides some at-a-glance stats for the given period: estimated earnings by brands, top products, and top refunds. * * test
 * Combines 
 
 ### Built With
