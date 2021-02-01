@@ -70,7 +70,7 @@ Here's why:
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [Chromium/ChromeDriver](https://chromedriver.chromium.org/)
 * [Pillow](https://python-pillow.org/)
-
+* [Tabulate](https://github.com/astanin/python-tabulate)
 
 
 <!-- GETTING STARTED -->
