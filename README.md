@@ -41,7 +41,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -97,7 +96,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 
 <!-- CONTRIBUTIONS -->
-## Contributions
+## Contributing
 
 See the [open issues](https://github.com/joshgallantt/rsCALC/issues) for a list of proposed features (and known issues). I'm new to programming and if you have any experience with Python and any of the frameworks, please feel free to submit a pull request or DM me.
 
