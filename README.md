@@ -93,7 +93,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Icon from Favicon](https://www.flaticon.com/free-icon/dress_1785255?term=dress&page=1&position=2&page=1&position=2&related_id=1785255&origin=search)
+* [Icon from Flaticon](https://www.flaticon.com/free-icon/dress_1785255?term=dress&page=1&position=2&page=1&position=2&related_id=1785255&origin=search)
 
 * Thank you James for answering way too many of my coding questions!
 
