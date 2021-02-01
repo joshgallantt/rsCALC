@@ -72,6 +72,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 * [Pandas](https://pandas.pydata.org/)
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [Chromium/ChromeDriver](https://chromedriver.chromium.org/)
+* [Pillow](https://python-pillow.org/)
 
 
 
@@ -83,11 +84,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+
   ```sh
-  npm install npm@latest -g
+  pip install selenium pandas Pillow bs4 lxlm
   ```
+  
 
 ### Installation
 
@@ -108,9 +109,9 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Contributions
 
-See the [open issues](https://github.com/joshgallantt/rsCALC/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/joshgallantt/rsCALC/issues) for a list of proposed features (and known issues). I'm new to programming and if you have any experience with Python and any of the frameworks, please feel free to submit a pull request or DM me.
 
 <!-- LICENSE -->
 ## License
