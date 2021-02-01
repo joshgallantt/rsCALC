@@ -62,10 +62,10 @@ Features:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-* Step 1) Enter your RewardStyle login info
-* Step 2) Click Start and wait for the files to be downloaded/worked with
-* Step 3) After you see the output you can export the data for your range using the Export button
-* Step 4) If you wish you see another date range, just select those dates and start again.
+* 1. Enter your RewardStyle login info
+* 2. Click Start and wait for the files to be downloaded/worked with
+* 3. After you see the output you can export the data for your range using the Export button
+* 4. If you wish you see another date range, just select those dates and start again.
 
 Note: Anything not exported gets deleted on program exit.
 
@@ -85,17 +85,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Instagram - [@joshgallantt](https://instagram.com/joshgallantt)
+* Instagram - [@joshgallantt](https://instagram.com/joshgallantt)
 
-Project Link: [https://github.com/joshgallantt/rsCALC](https://github.com/joshgallantt/rsCALC)
+* Project Link: [https://github.com/joshgallantt/rsCALC](https://github.com/joshgallantt/rsCALC)
 
-Discussions [here](https://github.com/joshgallantt/rsCALC/discussions)
+* Discussions [here](https://github.com/joshgallantt/rsCALC/discussions)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Icon from Favicon](https://www.flaticon.com/free-icon/dress_1785255?term=dress&page=1&position=2&page=1&position=2&related_id=1785255&origin=search)
 
-Thank you James for answering way too many of my coding questions!
+* Thank you James for answering way too many of my coding questions!
 
-Not affiliated with RewardStyle, please read the license for more info.
+* Not affiliated with RewardStyle, please read the license for more info.
 
