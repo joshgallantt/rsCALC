@@ -123,6 +123,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Instagram - [@joshgallantt](https://instagram.com/joshgallantt)
+
 Project Link: [https://github.com/joshgallantt/rsCALC](https://github.com/joshgallantt/rsCALC)
 
 <!-- ACKNOWLEDGEMENTS -->
