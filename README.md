@@ -82,12 +82,16 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites/Installation
 
+1. Install Python 3.X and make sure it's defined to the Path on installation.
+2. Have Google Chrome installed on your machine
+3. Install the required Python Libraries listed below:
 
   ```sh
   pip install selenium pandas Pillow bs4 lxlm
   ```
+4. Extract the zip anywhere on your machine and run rsCALC.py
   
 
 ### Installation
