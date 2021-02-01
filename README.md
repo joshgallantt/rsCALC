@@ -64,6 +64,7 @@ Here's why:
 
 ### Built With
 
+* [Python 3](https://www.python.org/downloads/)
 * [Selenium](https://github.com/SeleniumHQ/Selenium)
 * [Pandas](https://pandas.pydata.org/)
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
