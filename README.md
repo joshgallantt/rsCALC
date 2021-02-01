@@ -11,13 +11,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/joshgallantt/rsCALC">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/dress.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A commission data downloader and calculator for RewardStyle influencers
     <br />
   </p>
 </p>
