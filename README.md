@@ -122,17 +122,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@joshgallantt](https://instagram.com/joshgallantt)
+Instagram - [@joshgallantt](https://instagram.com/joshgallantt)
 Project Link: [https://github.com/joshgallantt/rsCALC](https://github.com/joshgallantt/rsCALC)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-
-
-
+* [Icon from:](https://www.flaticon.com/free-icon/dress_1785255?term=dress&page=1&position=2&page=1&position=2&related_id=1785255&origin=search)
 
 
