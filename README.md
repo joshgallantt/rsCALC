@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-If you've tried to grab insights from RewardStyles' commission interface, you know that it's dated and unwieldy. rsCALC is designed to automate the process and enable you to get to making business decisions faster.
+If you've tried to grab insights from RewardStyles' commission interface, you know that it's dated and unwieldy. rsCALC is designed to automate the process and enable you to make business decisions faster.
 
 Features:
 * Automatically logs in to your RewardStyle account and downloads your data from a specified date range
