@@ -52,7 +52,7 @@ Features:
 
 1. Install Python 3.X and make sure it's defined to the Path on installation.
 2. Have Google Chrome installed on your machine
-3. Install the required Python Libraries listed below:
+3. Install the following python libraries:
 
   ```sh
   pip install selenium pandas Pillow bs4 lxlm
